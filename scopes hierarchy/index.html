@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-scope-hierarchies-production</title>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+  <script src="index.js"></script>
+  
+
+  
+</head>
+<body ng-app="scopeExample">
+  <div class="show-scope-demo">
+  <div ng-controller="GreetController">
+    Hello {{name}}!
+  </div>
+  <div ng-controller="ListController">
+    <ol>
+      <li ng-repeat="name in names">{{name}} from {{department}}</li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- 
+Copyright 2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
