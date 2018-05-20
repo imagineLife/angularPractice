@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5.SimpleTable</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+</head>
+<body ng-app>
+  <table ng-init="persons = [
+    { name:'Tom', gender: 'Male', city: 'Hartford'},
+    { name:'Jerry', gender: 'Male', city: 'San Francisco'},
+    { name:'Ben', gender: 'Male', city: 'ST. Louis'},
+    { name:'Sally', gender: 'Female', city: 'Sao Palo'},
+    { name:'Maria', gender: 'Female', city: 'Orlando'},
+  ]">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in persons">
+        <td>{{p.name}}</td>
+        <td>{{p.gender}}</td>
+        <td>{{p.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
