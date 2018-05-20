@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5.SimpleTable</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body ng-app="tableModule">
+  <ul ng-controller="tableController">
+    <li ng-repeat="c in countries">
+      {{c.name}}
+      <ul>
+        <li ng-repeat="cntr in c.cities">
+          {{cntr.name}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
